@@ -1,0 +1,93 @@
+package kr.co.mlec.library.vo;
+
+public class LoginVO {
+	private String id;
+	private String password;
+	private String name;
+	private String email;
+	private String joindate;
+	private int isAdmin;
+	
+	
+	
+	
+	public LoginVO() {
+		super();
+	}
+	
+
+	public LoginVO(String id, String password, String name, String email, String joindate, int isAdmin) {
+		super();
+		this.id = id;
+		this.password = password;
+		this.name = name;
+		this.email = email;
+		this.joindate = joindate;
+		this.isAdmin = isAdmin;
+	}
+
+
+	public LoginVO(String id, String name, String email, String joindate) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.email = email;
+	this.joindate = joindate;
+}
+
+
+
+	public int getIsAdmin() {
+		return isAdmin;
+	}
+	public void setIsAdmin(int isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getJoindate() {
+		return joindate;
+	}
+	public void setJoindate(String joindate) {
+		this.joindate = joindate;
+	}
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "LoginVO [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + ", joindate="
+				+ joindate + ", isAdmin=" + isAdmin + "]";
+	}
+	
+	
+	
+	
+	
+}
